@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Test_Intent2</string>
+    <string name="question_1">請問 \u00A0\u00A0\u00A0 \"1\" +1 \u00A0\u00A0\u00A0 的結果是?</string>
+
+    <string name="question_1_radio_a">\u00A0\u00A0編譯失敗</string>
+
+    <string name="question_1_radio_b">\u00A0\u00A02 </string>
+
+    <string name="question_1_radio_c">\u00A0\u00A011 </string>
+
+
+    <string name="question_2">
+
+        <![CDATA[
+        請問
+        <br><br>
+        \u00A0\u00A0\u00A0\u00A0 <b><font color="blue">&lt;merge &gt;<font></b>
+        <br><br>
+        在layout的用途?
+        ]]></string>
+
+    <string name="question_2_radio_a">根本沒有這功能</string>
+    <string name="question_2_radio_b">版本控制用來合併不同的分支</string>
+    <string name="question_2_radio_c">
+
+        <![CDATA[
+將一個layout併入另一個layout,<br>
+可節省一層<b>ViewGroup</b>
+
+        ]]> </string>
+
+<string name="question_3">
+    <![CDATA[
+    請問<br>
+    切換avtivity 需要用什麼方法?
+    ]]>
+
+
+</string>
+
+
+    <string name="question_3_radio_a">startActivity()</string>
+    <string name="question_3_radio_b">startAvtivityForResult</string>
+    <string name="question_3_radio_c">以上皆是</string>
+
+<string name="question4">測試測試問題4：</string>
+<string name="question_4_radio_a">阿不就好棒棒</string>
+<string name="question_4_radio_b">
+    <![CDATA[
+    換行<br>
+    <b>我是重點</b> <br>
+    \u00A0\u00A0\u00A0我\u00A0是\u00A0空\u00A0白\u00A0鍵 <br>
+    <font color="blue">藍色 <font>
+    ]]>
+
+
+
+</string>
+</resources>
