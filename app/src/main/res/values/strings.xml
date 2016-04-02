@@ -24,8 +24,7 @@
     <string name="question_2_radio_c">
 
         <![CDATA[
-將一個layout併入另一個layout,<br>
-可節省一層<b>ViewGroup</b>
+將一個layout併入另一個layout,可節省一層<b>ViewGroup</b>
 
         ]]> </string>
 
@@ -43,8 +42,8 @@
     <string name="question_3_radio_b">startAvtivityForResult</string>
     <string name="question_3_radio_c">以上皆是</string>
 
-<string name="question4">測試測試問題4：</string>
-<string name="question_4_radio_a">阿不就好棒棒</string>
+    <string name="question4">測試測試問題4：</string>
+    <string name="question_4_radio_a">阿不就好棒棒</string>
 <string name="question_4_radio_b">
     <![CDATA[
     換行<br>

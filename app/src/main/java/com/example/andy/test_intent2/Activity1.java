@@ -7,7 +7,6 @@ import android.text.Html;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class Activity1 extends AppCompatActivity {
 
@@ -18,7 +17,8 @@ public class Activity1 extends AppCompatActivity {
     private RadioButton  m_tv_merge_radio_C;
     protected static CharSequence m_answers_1;
     public static final String BUNDLE_KEY_ANSWERS_1="com.andy.Android.answer_1";
-
+    protected static StringBuilder ActivitySB_1= new StringBuilder("第一題 回答的是→");
+    private CharSequence answer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +33,6 @@ public class Activity1 extends AppCompatActivity {
         if (color == -1) {
             return;
         }
-        Toast.makeText(this, "恭喜您 顏色成功值入 Activity1 ", Toast.LENGTH_LONG).show();
         view.setBackgroundColor(color);
     }
 
@@ -60,13 +59,16 @@ public class Activity1 extends AppCompatActivity {
     public void NEXT(View view) {
         Intent intent = new Intent(this, Activity2.class);
         intent.putExtra(Rest_color.BUNDLE_KEY_SETCOLOR, MainActivity.setColor);
-        intent.putExtra(BUNDLE_KEY_ANSWERS_1,m_answers_1);
-        startActivity(intent);}
+        intent.putExtra(BUNDLE_KEY_ANSWERS_1, m_answers_1);
+        ActivitySB_1.append(answer + "\n");
+
+        startActivity(intent);
+    }
 
     public void click(View view) {
-
         m_answers_1=view.getTag().toString();
-
+        RadioButton radio = (RadioButton)view;
+        answer =radio.getText();
 
     }
 }

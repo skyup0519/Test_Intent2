@@ -1,27 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.andy.test_intent2.Activity3">
-    <include
+    tools:context="com.example.andy.test_intent2.Activity4">
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_merge_setcolor"
+        android:layout_width="match_parent"
+        android:layout_height="400dp
+        "
+        android:text="傳送來的顏色"
+        android:textSize="20dp"
+        />
+    <Button
+        android:id="@+id/tv_button_activity3_AnswerTotal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        layout="@layout/activity_question_answer"
+        android:text="答案總攬"
+        android:onClick="AnswerTotal"/>
 
-        ></include>
+
 
     <Button
-        android:id="@+id/tv_button_activity3_NEXT"
+        android:id="@+id/tv_button_activity_3_MAIN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="NEXT"
-        android:onClick="NEXT"/>
-
+        android:text="MAIN"
+        android:onClick="MAIN"/>
 
 </LinearLayout>
